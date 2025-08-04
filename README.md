@@ -28,4 +28,17 @@
 8. `git branch -M main` 깃 디렉터리 명칭을 브랜치라고 부름. 해당 브랜치명을 개인에 맞게 변경. 기본이 **main**
 ---
 9. `git add .` **.** 이란 작업 수정한 모든 파일을 대기소(스테이지)에 올린다는 뜻 `git add README.md`
-10. ㅇㅇㅇ
+10. `git status` 현재 스테이지 확인 명령
+11. `git commit -m "기록메세지"` 현재 올리는 파일의 내용 기록
+12. `git remote add origin` 깃허브 저장소 업로드 위치가 어디인지 주소 연결
+13. `git push origin main` 11번에서 커밋한 파일을 12번 저장소에 최종 업로드하는 명령
+### 한번만 작성하면 끝인 깃 명령어
+* `git config` 이름, 이메일 설정
+* `git init` 저장소 설정
+* `git branch -M main` 저장소 이름 설정
+* `git remote add origin` 저장소 주소 설정
+### 작섭시 깃허브 업로드를 위해 반복해야하는 깃 명령어
+* `git add .`
+* `git commit -m "기록메세지"`
+* `git push origin main`
+* 필요시 중간 점검용으로 `git log` 또는 `git status`
