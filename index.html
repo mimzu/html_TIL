@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/images/favicon_tomato.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minju |웹디자이너&웹퍼블리셔&프론트엔드</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- HTML 내부 Css 위치(head 안, title 다음) -->
+    <style>
+        /* 선택자 {속성:값; 속성:값} */
+        /* 선택자 div {background-color:aqua;} */
+        /* 모든 HTML 선택자 작성 -> 속성, 값 채우기 */
+        body {background-color:#000;}
+        #wrap {
+            background-color:#fff;
+            /* 크키 width, height 0이 아닌 수 단위 필수!! */
+            width:440px; height:100vh; /* viewport height */
+            /* 안쪽 여백 padding */
+            padding-left:15px;
+            padding-right:15px;
+        }
+        #wrap header {}
+        #wrap header .profile_img {}
+        #wrap header .profile_img img {
+            margin-top:54px;
+        }
+        #wrap header h1 {
+            margin-top:18px;
+            /* 글자굵기 Regular 400 기준 +- 100 */
+            font-weight:600;
+            font-family:'Pretendard';
+            font-size:32px;
+            margin-bottom:6px;
+        }
+        #wrap header h1+h2 {
+            font-weight:500;
+            font-family:'Pretendard';
+            font-size:16px;
+            padding-bottom:12px;
+            margin-bottom:12px;
+            border-bottom:1px solid #000;
+        }
+        /* main~footer */
+        #wrap main {}
+        #wrap main h2 {
+            font-weight:600;
+            font-family:'Pretendard';
+            font-size:14px;
+            margin-bottom:20px;
+        }
+        #wrap main .block {
+            background-color:#eee;
+            padding-top: 10px; padding-bottom: 20px;
+            padding-left: 15px; padding-right: 15px;
+            /* 글자 속성 */
+            font-family:'Pretendard';
+            font-size: 13px;
+            line-height:150%;/* 행간 */
+            color: #00aeb4;
+            /* 블록과 인라인 요소 띄우기 */
+            margin-bottom:16px
+        }
+        #wrap main .inline {
+            background-color:#eeee;
+            padding-top:10px; padding-bottom:20px;
+            padding-left:15px; padding-right:15px;
+            font-family:'Pretendard';
+            font-size: 13px;
+            line-height:150%;
+            color: #FF16D4; 
+            margin-bottom:24px;
+        }
+        #wrap main .result {
+        font-family:'Pretendard';
+        font-size: 13px;
+
+        }
+        #wrap main .result li {
+            line-height:12px;
+            margin-bottom:20px;
+        }
+        #wrap main .result img {
+        margin-right:4px;
+        }
+        #wrap footer {
+            font-family:'Pretendard';
+            font-size: 13px;
+            background-color:#C9FF65;
+            max-width: 180px;
+            max-height:30px;
+            padding-top:4px; padding-bottom:4px;
+            padding-left:4px; padding-right:4px;
+        }
+        #wrap footer p {}
+        #wrap footer em {
+            font-family:'Pretendard';
+            font-size: 13px;
+            font-weight:800;
+            color :#00D471;
+        }
+        #wrap footer span {
+            font-family:'Pretendard';
+            font-size: 13px;
+            font-weight:500;
+            color:#00D471;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <p class="profile_img"><img src="./images/profile_photo.png" alt=""></p>
+            <h1>Minju</h1>
+            <h2>UI/UX 프론트엔드 반응형 웹디자인&웹 퍼블리셔 개발 양성과정</h2>
+        </header>
+        <main>
+            <h2>HTML 공부 목록</h2>
+            <div class="block">
+                h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, li, dl, dt, dd, hr, div, header, section, aside, nav, footer, article, main, a, video
+            </div>
+            <div class="inline">
+                span, em, strong, br, img, a, sup, sub, code, mark, s, q, del
+            </div>
+            <h2>작업 결과 바로가기</h2>
+            <ul class="result">
+                <li><img src="./images/link.png" alt=""><a href="./figma_layout/leeddeok.html">figma_layout/leeddeok</a></li>
+                <li><img src="./images/link.png" alt=""><a href="./figma_layout/ohou_pruduct.html">figma_layout/ohou_pruduct</a></li>
+                <li><img src="./images/link.png" alt=""><a href="./figma_layout/soopsori.html">figma_layout/soopsori</a></li>
+            </ul>
+            <h2>과제 제출</h2>
+            <ul class="result">
+                <il><img src="./images/link.png" alt=""><a href="#">대백과사전 HTML</a></il>
+            </ul>
+        </main>
+        <footer>
+            <p>
+                <em>minju</em>
+                <span>passminju@gmail.com</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
