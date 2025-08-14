@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서점재고표 | 알라딘</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <style>
+        #stock_list {
+            width:682px;
+            height:298px;
+        }
+        #stock_list thead {
+            background-color:#ff0066;
+            color:#fff;
+            height:58px;
+        }
+        #stock_list thead tr {}
+        #stock_list thead tr th{
+            color:#fff;
+        }
+        #stock_list tbody {
+            background-color:#f2f2f2;
+        }
+        #stock_list tbody tr:nth-child(2) {
+            background-color:#e8e8e8;
+            border:3px solid #ff0066;
+        }
+        #stock_list tbody tr:nth-child(4) {
+            background-color:#e8e8e8;
+        }
+        #stock_list tbody tr {
+            height:48xp;
+        }
+        #stock_list tbody tr th {
+            text-align: left;
+            padding-left:16px;
+        }
+        #stock_list tbody tr.selection {
+            color:#ff0066;
+        }
+        #stock_list tbody tr td {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <table id="stock_list">
+        <thead>
+            <tr>
+                <th>제목</th>
+                <th>종류</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!-- 1 -->
+                <th>사망 플래그</th>
+                <td>도서</td>
+                <td>50,000</td>
+                <td>300</td>
+                <td>재고없음</td>
+            </tr>
+            <tr class="selection"><!-- 2 -->
+                <th>설마 죽기야 하겠어</th>
+                <td>도서</td>
+                <td>40,000</td>
+                <td>212</td>
+                <td>-</td>
+            </tr>
+            <tr><!-- 3 -->
+                <th>이번이 정말 마지막이야</th>
+                <td>도서</td>
+                <td>50,000</td>
+                <td>300</td>
+                <td>재고없음</td>
+            </tr>
+            <tr><!-- 4 -->
+                <th>곧 돌아올게 기다려</th>
+                <td>도서</td>
+                <td>40,000</td>
+                <td>300</td>
+                <td>-</td>
+            </tr>
+            <tr><!-- 5 -->
+                <th>곧 생일이라 드레스를 사주기로 했어</th>
+                <td>도서</td>
+                <td>50,000</td>
+                <td>300</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
