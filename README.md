@@ -119,6 +119,15 @@
 * `value` 속성은 필요한 경우만 작성, 쇼핑몰 수량 1 기본값 
 ## CSS margin & Padding 작성방법
 * `1px 2px 3px 4px` : 위->오른쪽->아래->왼쪽
+* `1px` : 상하좌우 값 동일
 * `1px 2px` : 상하(1px) 좌우(2px)
 * `1px 0 2px` : 상(1px) 좌우(0px) 하(2px)
 * margin 겹침현상 주의 : 먼저 적용된 값만 적용, 나중 적용 값은 날라감
+# Form 입력과 선택 요소
+## `<input type="">`
+* type=text : 입력요소/name(데이터구분용)/value(초기값)
+* type=checkbox : 선택요소/name(그룹용)/value(데이터구분용)
+* 입력 요소 종류 : text, password, mail, search, number 등
+* 선택 요소 종류 : checkbox, radio, select, option
+* 데이터구분용은 id처럼 해당 데이터만을 구분하는 중복되지 않는 이름을 설정한다.
+* 그룹용은 클래스와 같이 2개 이상의 요소를 묶어주는 반복이름개념으로 사용한다.
