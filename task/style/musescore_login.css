@@ -1,0 +1,27 @@
+body {background-color: #eee;}
+#wrap {
+    background-color: #fff;
+    width: 320px;
+    margin: 0 auto;
+    padding:24px;
+}
+#wrap h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom:10px;
+}
+#wrap > p {
+    text-align: center;
+    font-size:0.875rem;
+}
+#wrap .sns_login {}
+#wrap .sns_login #google_login {}
+#wrap .sns_login #google_login img {}
+#wrap .sns_login a:nth-child(2,3) {}
+#wrap {}
+#wrap #user_info {}
+#wrap #user_info dt {}
+#wrap #user_info dd {}
+#wrap #user_info dd input {}
+#wrap #login_btn {}
