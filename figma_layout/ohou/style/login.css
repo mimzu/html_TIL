@@ -1,0 +1,32 @@
+#wrap .sns_icon {text-align: center; margin:14px 0 30px;}
+#wrap .sns_icon a {}
+#wrap .sns_icon a:nth-child(2) {margin:0 22px;}
+#wrap #login_frm {
+    padding:22px 0 0;
+}
+#wrap #login_frm .user_info {}
+#wrap #login_frm .user_info dt {
+    font-size:1.063rem;
+    margin:0 0 10px;
+    font-weight: 500;
+}
+#wrap #login_frm .user_info dd {
+    padding:10px;
+    border:1px solid #aaa;
+    margin:0 0 22px;
+    border-radius: 3px;
+}
+#wrap #login_frm .user_info .id_pw {}
+#wrap #login_frm .user_info #user_id {}
+#wrap #login_frm .user_info #user_pw {
+}
+#wrap #login_frm p {
+    margin:22px 0  0;
+    text-align: center;
+    font-size:0.875rem;
+}
+#wrap #login_frm p .login_btn {}
+#wrap #login_frm p a {
+    font-weight: 600;
+    border-bottom:1px solid #000;
+}
