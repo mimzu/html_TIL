@@ -1,9 +1,9 @@
-body {background-color: #eee;}
+body {background-color: #eeeeee;}
 #wrap {
     background-color: #fff;
-    width: 320px;
+    width: 340px;
     margin: 0 auto;
-    padding:24px;
+    padding: 24px 10px;
 }
 #wrap h1 {
     text-align: center;
@@ -13,15 +13,83 @@ body {background-color: #eee;}
 }
 #wrap > p {
     text-align: center;
+    font-size:0.75rem;
+    margin-bottom:24px;
+}
+#wrap > p em {
+    color:#6b5dfe;
     font-size:0.875rem;
 }
-#wrap .sns_login {}
-#wrap .sns_login #google_login {}
-#wrap .sns_login #google_login img {}
-#wrap .sns_login a:nth-child(2,3) {}
-#wrap {}
+#wrap .sns_login {
+    text-align: center;
+}
+#wrap .sns_login #google_login {
+    height: 42px;;
+    display:inline-block;
+    background-color:#6b5dfe;
+    padding:5px 8px;
+    border-radius: 36px;
+    float:left;
+    text-align: center;
+    font-size: 0.875rem;
+    color:#fff;
+    width:204px;
+    margin:0 0 15px;
+}
+#wrap .sns_login #google_login img {width: 30px; height: 30px;}
+#wrap .sns_login a:nth-child(2) {
+    float:left;
+    display:inline-block;
+    width: 48px;
+    height: 42px;
+    border-radius:18px;
+    border:1px solid #eee;
+    margin:0 10px;
+}
+#wrap .sns_login a:nth-child(3) {
+    float: right;
+    display:inline-block;
+    width: 48px;
+    height: 42px;
+    border-radius:18px;
+    border:1px solid #eee;
+}
+#wrap .or {
+    text-align: center;
+    font-size:0.75rem;
+    padding:12px;
+    clear:both;
+}
 #wrap #user_info {}
-#wrap #user_info dt {}
-#wrap #user_info dd {}
-#wrap #user_info dd input {}
-#wrap #login_btn {}
+#wrap #user_info dt {
+    clear:both;
+    font-size:0.75rem;
+    margin-bottom:4px;
+}
+#wrap #user_info dd:nth-child(3) {
+    float:left;
+    display:inline-block;
+    margin: 15px 0 4px 0;
+    font-size:0.75rem;
+}
+#wrap #user_info dd:nth-child(4) {
+    float:right;
+    font-size:0.75rem;
+    display:inline-block;
+    margin: 15px 0 4px 0;
+}
+#wrap #user_info dd {
+}
+#wrap #user_info dd input {
+    border:1px solid #000;
+    width: 100%;
+    height: 48px;
+    padding: 16px;
+}
+#wrap #login_btn {
+    background-color:#eee;
+    width:100%; height: 40px;
+    margin: 15px 0 0;
+    border-radius:36px;
+    font-size: 0.75rem;
+}
