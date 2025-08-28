@@ -2,8 +2,10 @@
 :root {
     /* --대상-용도:반복속성값; */
     /* 글자 크기 */
-    --text-subtitle40:2.5rem;
     --text-title70:4.375rem;
+    --text-subtitle40:2.5rem;
+    --text-contents31:1.938rem;   
+    --text-contents24:1.5rem;
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub16:1rem;
@@ -28,7 +30,12 @@
     --color-lightgrey:#aaa;
     --color-lightblue:#36b4e5;
     --color-gray2:#ddd;
+    --color-gray3:#fcfcfc;
+    --color-yellow:#F3C300;
+    --color-gray4:#f1f1f1;
+    --color-gray5:#808080;
     /* 레이아웃 정보 */
+    --width-desktop-1140:1140px;
     --width-desktop:1440px;
     --margin-desktop-1-r:80px;
 }
@@ -60,6 +67,7 @@ body,html {scroll-behavior:smooth;}
     display:flex; /* 자식 li 정렬을 위한 값 */
     flex-flow:row nowrap;
     gap:70px;
+    justify-content: center;
 }
 #wrap header nav .gnb > li {}
 #wrap header nav .gnb > li:hover .lnb {display:flex;}
