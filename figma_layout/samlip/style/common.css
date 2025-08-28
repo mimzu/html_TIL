@@ -9,6 +9,7 @@
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub16:1rem;
+    --text-sub14:0.875rem;
     --text-sub12:0.75rem;
     --text-sub10:0.625rem;
     /* 행간 */
@@ -34,6 +35,7 @@
     --color-yellow:#F3C300;
     --color-gray4:#f1f1f1;
     --color-gray5:#808080;
+    --color-gary6:#eee;
     /* 레이아웃 정보 */
     --width-desktop-1140:1140px;
     --width-desktop:1440px;
@@ -173,6 +175,30 @@ body,html {scroll-behavior:smooth;}
 #wrap header .right_menu li:nth-child(2) .lang_select a.kr {}
 #wrap header .right_menu li:nth-child(2) .lang_select a.en {}
 #wrap header .right_menu li:nth-child(2) .lang_select a.cn {}
-/* 메인 */
-#wrap main {}
-/* 푸터 만들면 추가됨 */
+/* --------------------------------------------푸터 다시 해보기 ------- */
+#wrap footer {
+    background-color:aqua;
+    padding: 0 80px;
+}
+#wrap footer .ft_top {}
+#wrap footer .ft_top > ul {
+
+}
+#wrap footer .ft_top > ul > li {
+    display:inline;
+}
+#wrap footer .ft_top > ul > li a {}
+#wrap footer .ft_top > ul > li a strong {}
+#wrap footer .ft_top .ft_select {}
+#wrap footer .ft_top .ft_select ul.family_site {display:inline;}
+#wrap footer .ft_top .ft_select ul.family_site > li {}
+#wrap footer .ft_top .ft_select ul.family_site > li a {}
+#wrap footer .ft_top .ft_select ul.family_site ul.family_list {display:none;}
+#wrap footer .ft_top .ft_select ul.family_site ul.family_list li {}
+#wrap footer .ft_top .ft_select ul.sitemap_wrap {display:inline;}
+#wrap footer .ft_top .ft_select ul.sitemap_wrap li {}
+#wrap footer .ft_top .ft_select ul.sitemap_wrap li .sitemap_list {}
+#wrap footer .ft_top .ft_select ul.sitemap_wrap li .sitemap_list h2 {}
+#wrap footer .ft_top .ft_select ul.sitemap_wrap li .sitemap_list button {}
+#wrap footer > address {}
+#wrap footer > p {}
