@@ -176,29 +176,123 @@ body,html {scroll-behavior:smooth;}
 #wrap header .right_menu li:nth-child(2) .lang_select a.en {}
 #wrap header .right_menu li:nth-child(2) .lang_select a.cn {}
 /* --------------------------------------------푸터 다시 해보기 ------- */
-#wrap footer {
-    background-color:aqua;
-    padding: 0 80px;
+footer {
+    background: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #eee;
 }
-#wrap footer .ft_top {}
-#wrap footer .ft_top > ul {
-
+footer .ft_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
-#wrap footer .ft_top > ul > li {
-    display:inline;
+footer .ft_top ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-#wrap footer .ft_top > ul > li a {}
-#wrap footer .ft_top > ul > li a strong {}
-#wrap footer .ft_top .ft_select {}
-#wrap footer .ft_top .ft_select ul.family_site {display:inline;}
-#wrap footer .ft_top .ft_select ul.family_site > li {}
-#wrap footer .ft_top .ft_select ul.family_site > li a {}
-#wrap footer .ft_top .ft_select ul.family_site ul.family_list {display:none;}
-#wrap footer .ft_top .ft_select ul.family_site ul.family_list li {}
-#wrap footer .ft_top .ft_select ul.sitemap_wrap {display:inline;}
-#wrap footer .ft_top .ft_select ul.sitemap_wrap li {}
-#wrap footer .ft_top .ft_select ul.sitemap_wrap li .sitemap_list {}
-#wrap footer .ft_top .ft_select ul.sitemap_wrap li .sitemap_list h2 {}
-#wrap footer .ft_top .ft_select ul.sitemap_wrap li .sitemap_list button {}
-#wrap footer > address {}
-#wrap footer > p {}
+footer .ft_top ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+footer .ft_top ul li a strong {
+    color: #0072ce; /* 파란색 */
+    font-weight: bold;
+}
+footer .ft_top ul li:nth-child(2) a strong {
+    color: #d32f2f; /* 빨간색 */
+}
+footer .ft_top ul li img {
+    height: 40px;
+    display: block;
+}
+/* 오른쪽 선택박스 */
+footer .ft_select {
+    display: flex;
+    gap: 20px;
+}
+footer .family_site > li:first-child a,
+footer .sitemap_wrap > li:first-child {
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    position: relative;
+}
+footer .family_site .family_list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 10;
+}
+footer .family_site:hover .family_list {
+    display: block;
+}
+footer .family_site .family_list li {
+    padding: 8px 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+footer .family_site .family_list li:hover {
+    background: #f5f5f5;
+}
+footer .sitemap_wrap .sitemap_list {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    z-index: 10;
+}
+footer .sitemap_wrap:hover .sitemap_list {
+    display: block;
+}
+footer .sitemap_wrap .sitemap_list h2 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+footer .sitemap_wrap .sitemap_list .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+footer address {
+    max-width: 1280px;
+    margin: 20px auto 10px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+}
+footer .company_info {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #999;
+}
