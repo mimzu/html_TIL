@@ -1,0 +1,28 @@
+/* 모바일 -> 태블릿 -> PC */
+/* 1. 모바일 */
+body {background-color:#fffcb1}
+main {width:100%; padding:0 15px; border: 2px solid #000; min-width:320px; }
+main h1 {
+    font-weight: 700;
+    font-size:2rem;
+}
+main p {font-size:0.875rem; line-height: 150%;}
+/* 미디어쿼리 바깥 기본 선택자는 모든 태그에 대한 선택자를 작성한다. */
+/* 2. 태블릿 */
+@media screen and (min-width:843px) {
+    /* 미디어쿼리 안쪽 선택자는 기본 선택자 중 달라지는 값을 가진 선택자만 작성한다. */
+    body {background-color:#bffbff;}
+    main {padding:0 30px;}
+    main h1 {
+        font-size:2.25rem;
+    }
+    main h1 {font-size:2.25rem;}
+}
+/* PC */
+@media screen and (min-width:1200px) {
+    body {background-color:#ffe5f3;}
+    main {width:1200px; padding:0px; margin:0 auto;}
+    main h1 {
+        font-size:2.625rem;
+    }
+}

@@ -1,0 +1,30 @@
+/* PC 1200~max(100%) #FFE5F3 */
+/* 태블릿 834~1199px #BFFBFF */
+/* 모바일 320~833px #FFFCB1 */
+/* 모바일 제작부터 시작한다면 min-width 규칙부터 */
+/* PC 제작부터 시작한다면 max-width 규칙부터 */
+/* PC */
+/* 최소제한너비는 시작 선택자에 먼저 작성한다 */
+body {background-color:#ffe5f3;}
+main {width:1200px; min-width:320px; margin:0 auto; border:2px solid #000;}
+main h1 {
+    font-weight: 700; font-size:2.625rem;
+}
+main p {
+    font-size:1rem; line-height: 150%;
+}
+/* 태블릿 */
+/* @media screen and (규칙) {규칙 성립 시 실행되는 CSS 선택자와 속성값} */
+@media screen and (max-width:1199px) {
+    /* 선택자 {속성:값; 속성:값;} */
+    body {background-color: #bffbff;}
+    main {width:100%; padding:0 30px;}
+    main h1 {font-size:2.25rem;}
+}/* 태블릿 @media end */
+@media screen and (max-width:833px) {
+    body {background-color:#fffcb1;}
+    main {padding:0 15px;}
+    main h1 {font-size:2rem;}
+    main p {font-size:0.875rem;}
+} /* 모바일 @media end */
+/* 모바일 */
